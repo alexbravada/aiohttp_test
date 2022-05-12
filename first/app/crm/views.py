@@ -12,5 +12,6 @@ class AddUserView(View):
         data = await self.request.json()
         print(data)
         user = User(email=data['email'], _id=uuid.uuid4())
-        print(user)
+        await self.request.app.crm_accessor.add_user(user)
+        print(self.request.app.database)
         return json_response(data={'status': 'ok'})
