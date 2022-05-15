@@ -4,6 +4,7 @@
 .idea
 myvenv
 */__pycache__/*
+*.vscode
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template

@@ -1,5 +1,4 @@
 from typing import Optional
-from urllib.request import Request
 from aiohttp.web import Application as AiohttpApplication, run_app as aiohttp_run_app, View as AiohttpView
 from aiohttp.web import Request as AiohttpRequest
 from app.web.routes import setup_routes
